@@ -1,0 +1,46 @@
+# Web Framework
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+websockets==13.1
+
+# Computer Vision & ML
+opencv-python==4.10.0.84
+mediapipe>=0.10.0  # Compatible with Apple Silicon
+numpy>=1.24.0,<2.0.0
+pillow==10.4.0
+scikit-image==0.24.0  # For SSIM calculation
+
+# Object Detection (YOLO)
+ultralytics==8.3.0
+torch>=2.0.0  # Will install compatible version for your platform
+torchvision>=0.15.0
+
+# Audio Processing (Optional - comment out if not needed initially)
+# pyannote.audio==3.3.2
+librosa==0.10.2
+soundfile==0.12.1
+# webrtcvad==2.0.10  # May have issues on Apple Silicon
+
+# Database
+sqlalchemy==2.0.35
+psycopg2-binary==2.9.9
+alembic==1.13.3
+
+# Caching & Queue
+redis==5.1.1
+celery==5.4.0
+
+# Utilities
+python-dotenv==1.0.1
+pydantic==2.9.2
+pydantic-settings==2.6.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dateutil==2.9.0
+
+# AI/LLM for Violation Verification
+google-generativeai>=0.7.0,<0.8  # Gemini for intelligent violation verification (compatible with MediaPipe)
+
+# Monitoring & Logging
+loguru==0.7.2
