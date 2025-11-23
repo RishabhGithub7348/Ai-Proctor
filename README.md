@@ -173,7 +173,7 @@ Ai-Proctor/
 - **Node.js 18+**
 - **Webcam and microphone**
 - **Modern browser** (Chrome, Firefox, Edge)
-- **Google Gemini API Key** (for AI verification) - Get from [Google AI Studio](https://makersuite.google.com/app/apikey)
+- **Google Gemini API Key** (for AI verification) - Get from [Google Cloud](https://console.cloud.google.com/getting-started)
 
 ### Backend Setup
 
@@ -199,7 +199,7 @@ cp .env.example .env
 # Edit .env and add:
 # GEMINI_API_KEY=your-api-key-here
 # GEMINI_MODEL=gemini-1.5-flash
-# ENABLE_AI_VERIFICATION=true
+# ENABLE_AI_VERIFICATION=false
 # AI_VERIFICATION_CONFIDENCE_THRESHOLD=0.7
 ```
 
@@ -288,7 +288,7 @@ Edit `backend/.env` to customize:
 # Gemini AI Verification
 GEMINI_API_KEY=your-gemini-api-key-here
 GEMINI_MODEL=gemini-1.5-flash
-ENABLE_AI_VERIFICATION=true
+ENABLE_AI_VERIFICATION=false
 AI_VERIFICATION_CONFIDENCE_THRESHOLD=0.7
 
 # ML Model Thresholds
@@ -492,7 +492,7 @@ DEBUG=True
 
 ### Gemini API errors
 - Verify API key is correct in `.env` file
-- Check API quota/billing at [Google AI Studio](https://makersuite.google.com/)
+- Check API quota/billing at Google Cloud Console
 - Ensure `ENABLE_AI_VERIFICATION=true` if you want AI verification
 - Can disable AI verification temporarily: `ENABLE_AI_VERIFICATION=false`
 
