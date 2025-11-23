@@ -29,6 +29,25 @@ python -m uvicorn app.main:app --reload
 
 Backend will run on: `http://localhost:8000`
 
+### Step 1 (Alternative): Backend Setup with Docker
+
+If you're on Windows or having trouble with Python dependencies, use Docker instead:
+
+```bash
+# Navigate to backend
+cd backend
+
+# Build the Docker image
+docker build -t ai-proctor-backend .
+
+# Run the container
+docker run -p 8000:8000 ai-proctor-backend
+```
+
+Backend will run on: `http://localhost:8000`
+
+**Note:** Docker Desktop must be installed. Download from [docker.com](https://www.docker.com/products/docker-desktop/)
+
 ### Step 2: Frontend Setup
 
 Open a new terminal:
