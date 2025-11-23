@@ -199,7 +199,7 @@ cp .env.example .env
 # Edit .env and add:
 # GEMINI_API_KEY=your-api-key-here
 # GEMINI_MODEL=gemini-1.5-flash
-# ENABLE_AI_VERIFICATION=true
+# ENABLE_AI_VERIFICATION=false
 # AI_VERIFICATION_CONFIDENCE_THRESHOLD=0.7
 ```
 
@@ -288,7 +288,7 @@ Edit `backend/.env` to customize:
 # Gemini AI Verification
 GEMINI_API_KEY=your-gemini-api-key-here
 GEMINI_MODEL=gemini-1.5-flash
-ENABLE_AI_VERIFICATION=true
+ENABLE_AI_VERIFICATION=false
 AI_VERIFICATION_CONFIDENCE_THRESHOLD=0.7
 
 # ML Model Thresholds
