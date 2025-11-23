@@ -492,7 +492,7 @@ DEBUG=True
 
 ### Gemini API errors
 - Verify API key is correct in `.env` file
-- Check API quota/billing at [Google AI Studio](https://makersuite.google.com/)
+- Check API quota/billing at Google Cloud Console
 - Ensure `ENABLE_AI_VERIFICATION=true` if you want AI verification
 - Can disable AI verification temporarily: `ENABLE_AI_VERIFICATION=false`
 
