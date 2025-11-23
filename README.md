@@ -162,7 +162,6 @@ Ai-Proctor/
 │   └── tailwind.config.ts
 ├── README.md
 ├── SETUP.md
-└── TANSTACK_QUERY_GUIDE.md
 ```
 
 ## Installation
