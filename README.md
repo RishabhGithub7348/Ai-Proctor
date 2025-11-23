@@ -173,7 +173,7 @@ Ai-Proctor/
 - **Node.js 18+**
 - **Webcam and microphone**
 - **Modern browser** (Chrome, Firefox, Edge)
-- **Google Gemini API Key** (for AI verification) - Get from [Google AI Studio](https://makersuite.google.com/app/apikey)
+- **Google Gemini API Key** (for AI verification) - Get from [Google Cloud](https://console.cloud.google.com/getting-started)
 
 ### Backend Setup
 
