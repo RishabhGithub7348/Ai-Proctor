@@ -210,6 +210,48 @@ python -m uvicorn app.main:app --reload
 
 The backend will be available at `http://localhost:8000`
 
+### Backend Setup with Docker (Recommended for Windows)
+
+If you're on Windows or having trouble setting up Python dependencies, use Docker:
+
+1. **Install Docker Desktop**:
+   - Download from [docker.com](https://www.docker.com/products/docker-desktop/)
+   - Install and start Docker Desktop
+
+2. **Build the Docker image**:
+```bash
+cd backend
+docker build -t ai-proctor-backend .
+```
+
+3. **Run the container**:
+```bash
+# Basic run (without AI verification)
+docker run -p 8000:8000 ai-proctor-backend
+
+# With Gemini AI verification (optional)
+docker run -p 8000:8000 \
+  -e GEMINI_API_KEY=your-api-key-here \
+  -e ENABLE_AI_VERIFICATION=true \
+  ai-proctor-backend
+```
+
+4. **Verify it's running**:
+   - Open http://localhost:8000 - Should show "AI Proctor API is running"
+   - Open http://localhost:8000/health - Health check endpoint
+
+**Useful Docker Commands:**
+```bash
+# Stop container
+docker stop $(docker ps -q --filter ancestor=ai-proctor-backend)
+
+# View logs
+docker logs -f $(docker ps -q --filter ancestor=ai-proctor-backend)
+
+# Rebuild after changes
+docker build -t ai-proctor-backend . --no-cache
+```
+
 ### Frontend Setup
 
 1. Navigate to the frontend directory:

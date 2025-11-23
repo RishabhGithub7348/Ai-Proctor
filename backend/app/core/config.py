@@ -41,7 +41,7 @@ class Settings(BaseSettings):
     # Gemini AI for Violation Verification
     GEMINI_API_KEY: str = ""  # Set in .env file
     GEMINI_MODEL: str = "gemini-1.5-flash"  # Fast and cost-effective
-    ENABLE_AI_VERIFICATION: bool = True  # Enable LLM-based violation verification
+    ENABLE_AI_VERIFICATION: bool = False  # Set to True and add GEMINI_API_KEY to enable AI verification
     AI_VERIFICATION_CONFIDENCE_THRESHOLD: float = 0.7  # Only verify if AI is 70%+ confident it's genuine
 
     # Recording
